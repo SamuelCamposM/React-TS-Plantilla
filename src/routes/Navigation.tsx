@@ -12,8 +12,8 @@ export const Navigation = () => {
           <nav>
             <img src={Imagen} alt="React logo" />{" "}
             <ul>
-              {routes.map(({ to, name }) => (
-                <li>
+              {routes.map(({ to, name }, index) => (
+                <li key={index}>
                   <NavLink
                     to={to}
                     className={({ isActive }) => (isActive ? "nav-active" : "")}
