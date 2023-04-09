@@ -7,8 +7,6 @@ export interface Props {
   style?: React.CSSProperties;
 }
 export const ProductTitle = ({ title, className, style }: Props) => {
-  console.log({ className });
-
   const { product } = useContext(ProductContext);
 
   return (
