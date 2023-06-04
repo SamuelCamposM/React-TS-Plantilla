@@ -33,14 +33,15 @@ export const FormikYupPage = () => {
         {errors.firstName && touched.firstName && (
           <span>{errors.firstName}</span>
         )}
-        <label htmlFor="lastName">Last Name</label>
 
+        <label htmlFor="lastName">Last Name</label>
         <input type="text" {...getFieldProps("lastName")} />
         {errors.lastName && touched.lastName && <span>{errors.lastName}</span>}
-        <label htmlFor="email">Email Adress</label>
 
+        <label htmlFor="email">Email Adress</label>
         <input type="text" {...getFieldProps("email")} />
         {errors.email && touched.email && <span>{errors.email}</span>}
+
         <button type="submit">Submit</button>
       </form>
     </div>
